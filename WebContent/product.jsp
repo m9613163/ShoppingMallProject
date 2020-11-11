@@ -14,7 +14,7 @@
 			<h1 class="display-3">상품목록</h1>
 		</div>
 	</div>
-	<%
+	<% 
 		String id = request.getParameter("id");
 		Product product = productDAO.getProductById(id);
 	%>

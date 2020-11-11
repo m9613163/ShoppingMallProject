@@ -33,7 +33,7 @@ public class ProductRepository {
 		listOfProducts.add(notebook);
 		listOfProducts.add(tablet);
 	}
-	
+	 
 	public ArrayList<Product> getAllProducts() {
 		return listOfProducts;
 	}

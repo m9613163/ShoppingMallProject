@@ -19,7 +19,7 @@
 	<%
 		ArrayList<Product> listOfProducts = productDAO.getAllProducts();
 	%>	
-	
+	 
 	<div class="container">
 		<div class="row" align="center">
 			<%
