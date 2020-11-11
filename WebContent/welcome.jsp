@@ -39,7 +39,12 @@
 				hour = hour - 12;
 			}
 			String CT = hour + " : " + minute + " : " + second + " " + am_pm;
-			out.println("현재 접속 시각 : " + CT + "\n");
+			out.println("현재 접속 시각 : " + CT + "\n" + "<br>");
+			%>
+			
+			<p>페이지가 10초마다 새로고침 됩니다.
+			<%
+				response.setIntHeader("Refresh", 10);
 			%>
 		</div>
 		<hr>
