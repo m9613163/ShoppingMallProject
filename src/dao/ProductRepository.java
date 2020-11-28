@@ -6,6 +6,11 @@ import dto.Product;
 public class ProductRepository {
 	
 	private ArrayList<Product> listOfProducts = new ArrayList<Product>();
+	private static ProductRepository instance = new ProductRepository();
+	
+	public static ProductRepository getInstance() {
+		return instance;
+	}
 	
 	public ProductRepository() {
 		Product phone = new Product("P1234", "iPhone 12", 1000000);
@@ -33,7 +38,7 @@ public class ProductRepository {
 		listOfProducts.add(notebook);
 		listOfProducts.add(tablet);
 	}
-	 
+	
 	public ArrayList<Product> getAllProducts() {
 		return listOfProducts;
 	}
@@ -51,5 +56,9 @@ public class ProductRepository {
 			}
 		}
 		return productById;
+	}
+	
+	public void addProduct(Product product) {
+		listOfProducts.add(product);
 	}
 }

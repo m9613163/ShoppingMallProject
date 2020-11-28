@@ -17,7 +17,7 @@
 				<%=greeting %>
 			</h1>
 		</div>
-	</div> 
+	</div>
 	<div class = "container">
 		<div class = "text-center">
 			<h3>
